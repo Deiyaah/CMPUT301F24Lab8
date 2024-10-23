@@ -42,7 +42,7 @@ public class CustomListTest {
     @Test
     public void hasCityTest(){
         list = MockCityList();
-        City city = new City("Regina", "Saskatchewan");
+        City city = new City("Edmonton", "AB");
         list.add(city);
         list.hasCity(city);
         assertEquals("City belongs in the list", list.hasCity(city));
