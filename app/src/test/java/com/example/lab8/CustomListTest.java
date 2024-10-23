@@ -18,23 +18,10 @@ public class CustomListTest {
      * @return
      */
     public CustomList MockCityList(){
-        list = new CustomList(null,new ArrayList<>()); return list;
+        list = new CustomList(null,new ArrayList<>());
+        return list;
     }
 
-    /**
-     * this gets size of the list * @return
-     */
-    public int getCount(){
-        return cities.size();
-    }
-    /**
-     * this adds a city object to the list
-     * for the first phase it will be empty
-     * @param city
-     */
-    public void addCity(City city){
-
-    }
     /**
      * get the size of the list
      * increase the list by adding a new city
@@ -43,6 +30,8 @@ public class CustomListTest {
     @Test
     public void addCityTest(){
         list = MockCityList();
-        int listSize = list.getCount(); list.addCity(new City("Estevan", "SK")); assertEquals(list.getCount(),listSize + 1);
+        int listSize = list.getCount();
+        list.addCity(new City("Estevan", "SK"));
+        assertEquals(list.getCount(),listSize + 1);
     }
 }
