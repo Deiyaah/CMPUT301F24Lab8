@@ -76,8 +76,8 @@ public class CustomListTest {
         City city = new City("Regina", "Saskatchewan");
         list.addCity(city);
         assertEquals(1, list.countCity());
-        City city = new City("Regina", "Saskatchewan");
-        list.add(city);
+        City city2 = new City("Regina", "Saskatchewan");
+        list.addCity(city);
         assertEquals(2, list.countCity());
     }
 }
