@@ -55,7 +55,7 @@ public class CustomListTest {
      * check if the size of the list is one less than before
      */
     @Test
-    void testDeleteCity(){
+    void deleteCityTest(){
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
         list.addCity(city);
