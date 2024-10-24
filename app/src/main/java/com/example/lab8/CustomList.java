@@ -60,4 +60,39 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+//    /**
+//     * This returns if the city belongs in the list or not
+//     * @return
+//     *      Return if the list contains the city or not
+//     */
+//    public String hasCity(City city) {
+//        if (cities.contains(city)){
+//            return("City belongs in the list");
+//        }else {
+//            return("City doesn't belong in the list");
+//        }
+//    }
+//
+//    /**
+//     * This deletes a city from the list if the city exists
+//     * @param city
+//     *      This is a candidate city to delete
+//     */
+//    public void delete(City city) {
+//        if (cities.contains(city)){
+//            cities.remove(city);
+//        }else {
+//            throw new IllegalArgumentException();
+//        }
+//    }
+//
+//    /**
+//     * This returns the number of cities in the list
+//     * @return
+//     *      Return total number of cities in list
+//     */
+//    public int countCity() {
+//        return(cities.size());
+//    }
+
 }
