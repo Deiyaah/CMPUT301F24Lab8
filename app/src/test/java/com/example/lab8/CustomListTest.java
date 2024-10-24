@@ -55,7 +55,7 @@ public class CustomListTest {
      * check if the size of the list is one less than before
      */
     @Test
-    void deleteCityTest(){
+    public void deleteCityTest(){
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
         list.addCity(city);
@@ -64,4 +64,20 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize - 1);
     }
 
+    /**
+     * add a city to the list
+     * check if the count is 1
+     * add one more city to the list
+     * check if the size of the list is one more than before
+     */
+    @Test
+    public void countCitiesTest(){
+        list = MockCityList();
+        City city = new City("Regina", "Saskatchewan");
+        list.addCity(city);
+        assertEquals(1, list.countCity());
+        City city = new City("Regina", "Saskatchewan");
+        list.add(city);
+        assertEquals(2, list.countCity());
+    }
 }
